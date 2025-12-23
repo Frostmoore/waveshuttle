@@ -12,13 +12,11 @@
 .ws-team-card {
     cursor: pointer;
     transition:
-        transform 0.8s ease,
-        opacity 0.6s ease,
-        box-shadow 0.8s ease,
-        flex-basis 0.8s ease;
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease,
+        flex-basis 0.35s ease;
 }
-
-
 
 @media (min-width: 768px) {
     .ws-team-grid {
@@ -43,14 +41,14 @@
 
     .ws-team-grid.ws-team-grid--has-active .ws-team-card--active {
         flex-basis: 60%;
-        /* NIENTE transform qui, lo gestisce il FLIP in JS */
+        transform: translateX(0);
         box-shadow: 0 0 40px rgba(34, 211, 238, 0.35);
     }
 
     .ws-team-grid.ws-team-grid--has-active .ws-team-card--inactive {
         flex-basis: 20%;
         opacity: 0.35;
-        /* NIENTE transform qui, solo flex-basis + opacity */
+        transform: translateX(12px) scale(0.9);
     }
 }
 
@@ -60,11 +58,10 @@
     opacity: 0;
     overflow: hidden;
     transition:
-        max-height 0.8s ease,
-        opacity 0.6s ease,
-        margin-top 0.6s ease;
+        max-height 0.35s ease,
+        opacity 0.35s ease,
+        margin-top 0.35s ease;
 }
-
 
 .ws-team-card--active .ws-team-card-detail {
     max-height: 800px;
@@ -76,7 +73,8 @@
 
 
 
-/* STUDIOS */
+
+/* STUDIOS*/
 
 /* STUDIOS PAGE ANIMATIONS */
 .ws-studios-grid {
@@ -87,13 +85,11 @@
 .ws-studio-card {
     cursor: pointer;
     transition:
-        transform 0.5s ease,
-        opacity 0.5s ease,
-        box-shadow 0.5s ease,
-        flex-basis 0.5s ease;
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease,
+        flex-basis 0.35s ease;
 }
-
-
 
 @media (min-width: 768px) {
     .ws-studios-grid {
@@ -116,12 +112,14 @@
 
     .ws-studios-grid.ws-studios-grid--has-active .ws-studio-card--active {
         flex-basis: 60%;
+        transform: translateX(0);
         box-shadow: 0 0 40px rgba(34, 211, 238, 0.35);
     }
 
     .ws-studios-grid.ws-studios-grid--has-active .ws-studio-card--inactive {
         flex-basis: 20%;
         opacity: 0.35;
+        transform: translateX(12px) scale(0.9);
     }
 }
 
@@ -131,14 +129,14 @@
     opacity: 0;
     overflow: hidden;
     transition:
-        max-height 0.8s ease,
-        opacity 0.6s ease,
-        margin-top 0.6s ease;
+        max-height 0.35s ease,
+        opacity 0.35s ease,
+        margin-top 0.35s ease;
 }
-
 
 .ws-studio-card--active .ws-studio-card-detail {
     max-height: 800px;
     opacity: 1;
     margin-top: 1rem;
 }
+

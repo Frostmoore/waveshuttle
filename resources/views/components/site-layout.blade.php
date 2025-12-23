@@ -25,12 +25,16 @@
                         WAVE SHUTTLE
                     </span>
                 </a>
-
                 <nav class="hidden md:flex items-center gap-6 text-xs tracking-[0.25em] uppercase text-slate-400">
-                    <a href="#studio" class="hover:text-cyan-300 transition">Studio</a>
-                    <a href="#patrick" class="hover:text-cyan-300 transition">Patrick Wave</a>
-                    <a href="#booking" class="hover:text-cyan-300 transition">Booking</a>
+                    <a href="{{ route('home') }}#studio" class="hover:text-cyan-300 transition">Studio</a>
+                    <a href="{{ route('home') }}#patrick" class="hover:text-cyan-300 transition">Patrick Wave</a>
+                    <a href="{{ route('team') }}" class="hover:text-cyan-300 transition">Team</a>
+                    <a href="{{ route('studios') }}" class="hover:text-cyan-300 transition">Studios</a>
+                    <a href="{{ route('home') }}#booking" class="hover:text-cyan-300 transition">Booking</a>
+
                 </nav>
+
+
             </div>
         </header>
 
