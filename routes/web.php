@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\StudioController;
+use App\Http\Controllers\DiscografiaController;
+use App\Http\Controllers\BookingController;
 
 Route::get('/', function () {
     return view('General.home');
@@ -21,5 +23,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/team', TeamController::class)->name('team');
 Route::get('/studios', StudioController::class)->name('studios');
+Route::get('/discografia', DiscografiaController::class)->name('discografia');
+Route::get('/booking', BookingController::class)->name('booking');
 
 require __DIR__.'/auth.php';

@@ -119,17 +119,15 @@
                     </p>
 
                     {{-- CTA: BOOK A SESSION --}}
-                    <div class="pt-4">
-                        <a href="mailto:info@waveshuttle.studio"
-                        class="inline-flex items-center justify-center px-6 py-2.5 rounded-full
+                    <a href="{{ route('booking') }}"
+                    class="inline-flex items-center justify-center px-6 py-2.5 rounded-full
                         text-[11px] font-semibold uppercase tracking-[0.22em]
                         border border-cyan-400/70 text-cyan-300 bg-transparent
                         transition
                         hover:bg-cyan-400 hover:text-slate-950 hover:border-cyan-400
                         hover:shadow-[0_0_40px_rgba(34,211,238,0.55)]">
-                            Book a Session
-                        </a>
-                    </div>
+                        Book a Session
+                    </a>
                 </div>
             </div>
         </div>
