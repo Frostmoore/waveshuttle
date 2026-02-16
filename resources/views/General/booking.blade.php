@@ -23,7 +23,7 @@
                         src="https://waveshuttle.mysonido.com/booking-services"
                         frameborder="0"
                         seamless="seamless"
-                        style="width:100%; height:100%;"
+                        style="width:100%; height:100vh;"
                         title="Wave Shuttle Booking Form"
                     ></iframe>
                 </div>
